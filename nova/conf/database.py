@@ -48,10 +48,10 @@ api_db_opts = [
     cfg.BoolOpt('sqlite_synchronous',
                 default=True,
                 help='If True, SQLite uses synchronous mode.'),
-    cfg.StrOpt('slave_connection',
+    cfg.StrOpt('subordinate_connection',
                secret=True,
                help='The SQLAlchemy connection string to use to connect to the'
-                    ' slave database.'),
+                    ' subordinate database.'),
     cfg.StrOpt('mysql_sql_mode',
                default='TRADITIONAL',
                help='The SQL mode to be used for MySQL sessions. '
